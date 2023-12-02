@@ -1,4 +1,4 @@
-# Web Application Enhanced Image Captioning Implies Social Relationships
+# Web Application: Enhanced Image Captioning Implies Social Relationships
 
 The proposed CvT based system is an innovative web application that combines advanced techniques in computer vision and natural language processing to detect social relationships in images and enhance image captions accordingly.
 
