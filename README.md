@@ -4,7 +4,7 @@
 
 ### Context
 - Importance of social relationship recognition in images, particularly with the rise in online image sharing.
-
+  
 ### Challenges
 - Difficulty in distinguishing between different social relationships from images.
 - Need for more effective learning algorithms and datasets.
