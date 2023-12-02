@@ -69,3 +69,5 @@ The web application is developed using Python and the following frameworks and l
 4. Start the web application server:
    ```bash
    ./runserver.sh
+
+5. After starting the server, open a web browser and navigate to: http://127.0.0.1:8000
