@@ -58,7 +58,7 @@
 
 ### Summary
 - Experimental results show that proposed methods are effective in multi-class social relationship recognition which can be applied to photo analysis.
-- An example application is presented by recognizing social connections in photos and producing relevant captions based on those connections. ![image](https://github.com/Shomi246/Social-Relationship-Recognition/assets/46284798/82a96f28-9703-4560-8a27-f348567c3355)
+- An example application is presented by recognizing social connections in photos and producing relevant captions based on those connections.
 
 
 
