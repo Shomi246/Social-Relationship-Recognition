@@ -41,7 +41,7 @@
 ### CvT and Transfer Learning Model
 - Approach uses a convolutional vision transformer and a transfer learning model based on ResNet50 architecture.
   
-<img src="images/model.png" alt="Annotated image" width="600"/> <!-- Adjust width as needed -->
+<img src="images/model.png" alt="Annotated image" width="800"/> <!-- Adjust width as needed -->
 
 ## Performance Evaluation
 
