@@ -26,7 +26,7 @@
 - A publicly available dataset used for training and evaluating the models, containing images annotated with various types of social relationships.
 - Dataset Link: [PISC Dataset on Zenodo](https://zenodo.org/records/1059151)
   
-- ![Paired Images Example](images/paired images.png)
+- ![Paired Images Example](images/paired_img.png)
 
 ## Data Preprocessing
 
