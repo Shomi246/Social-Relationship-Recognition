@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div style="padding-top: 70px;"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-7" style="border-right: 1px solid silver;">
+      <br>
+      <form class="form-inline" method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+        <div class="form-group mb-2">
+          <label for="fileInput" class="sr-only">Choose file:</label>
+          <input type="file" class="form-control-file mr-2" id="fileInput" name="image" accept="image/jpg" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Upload</button>
+      </form> 
+
+      <!-- {% if error %}
+        <div class="alert alert-danger" role="alert">
+          {{ error }}
+        </div>
+      {% endif %}        -->
+      {% if data.errorMsg %}
+        <div class="alert alert-danger" role="alert">
+          {{ data.errorMsg|safe }}
+          <!-- {{ data.errorMsg|replace('\n', '<br>') }} -->
+        </div>
+      {% endif %}
+
+      {% if data.isImagefile %}
+        <div class="row d-flex justify-content-center align-items-center">
+          <img src="{{ url_for('static', filename='images/') }}{{ data.fileName }}" class="img-thumbnail" alt="Cinque Terre" width="454" height="356"> 
+        </div>  
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="card mt-3">
+            <div class="card-body"><span>Caption: {{ data.sin_cap }}</span></div>
+          </div>
+        </div>
+        <br><hr>
+        <h5>Annotated Image</h5>
+        <div class="row d-flex justify-content-center align-items-center">
+          <img src="{{ url_for('static', filename='temp_img/annoted_image.jpg') }}" class="img-thumbnail" alt="Cinque Terre" width="454" height="356"> 
+        </div> 
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="card mt-3">
+            <div class="card-body"><span>Enhanced Caption 1: {{ data.summary }}</span></div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-body"><span>Enhanced Caption 2: {{ data.summary1 }}</span></div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-body"><span>Enhanced Caption 3: {{ data.summary2 }}</span></div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-body"><span>Most Enhanced Caption: {{ data.esum }}</span></div>
+          </div>
+        </div>     
+      {% endif %}
+    </div>
+    <div class="col-sm-5">
+      <!-- for cropped images section -->
+     {% include "croppedImage.html" %}
+      <hr>
+      {% include "relationship.html" %}
+    </div>
+  </div>
+</div>
+{% endblock %} 

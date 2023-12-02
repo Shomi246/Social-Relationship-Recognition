@@ -1,0 +1,18 @@
+<h5>Relationship</h5>
+{% if data.isImagefile %}
+    {% for pairData in data.pairInfo %}
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-4">
+                <div class="figure-center">
+                    <figure class="figure">
+                        <img src="{{ url_for('static', filename='temp_img/'+(loop.index)|string+'.jpg') }}"
+                            class="figure-img rounded float-right" alt="Cinque Terre" style="height: 120px; max-width: 150px;">
+                        <figcaption class="figure-caption figure-caption-center">Pair {{ loop.index }}{{ pairData }}</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-2"><span class="right-text">Prediction: {{ data.rltnPredicts[loop.index-1] }} </span></div>
+            <div class="col-sm-6"><sspan class="text-center">{{ data.captions[loop.index-1] }}</span></div>
+        </div>
+    {% endfor %}
+{% endif %}

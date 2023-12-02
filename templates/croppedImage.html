@@ -1,0 +1,18 @@
+
+<div class="pt-3"></div>
+
+<h5>Cropped Images</h5>
+{% if data.isImagefile %}
+        {% for i in range(data.numOfperson) %}
+                {% if loop.index % 3 == 1 %}
+                        <div class="row d-flex justify-content-center align-items-center">
+                                {% endif %}
+                                <div class="col-sm-4">
+                                        <img src="{{ url_for('static', filename='temp_img/_'+(i+1)|string+'.jpg') }}" class="img-thumbnail" alt="Cinque Terre"  height="236">
+                                </div>
+                                {% if loop.index % 3 == 0 or loop.last %}
+                                <br>
+                        </div>
+                {% endif %}
+        {% endfor %}
+{% endif %}
