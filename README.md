@@ -38,10 +38,20 @@ The web application is developed using Python and the following frameworks and l
 
 ## Python Libraries Used
 
-- **Numpy**: For numerical computing and array manipulation.
-- **OS**: For interacting with the operating system.
-- **NLTK**: For natural language processing tasks.
-- ... (continue with the rest of the libraries as in your draft)
+- **Numpy**: For numerical operations and multi-dimensional array handling.
+- **OS**: For operating system interactions like file and environment management.
+- **NLTK**: For natural language processing tasks including tokenization and parsing.
+- **heapq**: For implementing heap queue algorithms like finding the n-largest elements.
+- **TensorFlow**: For building and training machine learning and deep learning models.
+- **Keras**: For high-level neural network APIs, simplifying deep learning model creation.
+- **OpenCV**: For real-time computer vision and image processing tasks.
+- **Pandas**: For data manipulation and analysis.
+- **Spacy**: For advanced natural language processing.
+- **Transformers**: For state-of-the-art natural language processing tasks.
+- **PyTorch**: For machine learning applications, particularly in computer vision and NLP.
+- **PIL (Python Imaging Library)**: For image file handling and manipulation.
+- **OpenAI**: For integrating powerful AI models for text generation and analysis.
+
 
 ## Installation
 
